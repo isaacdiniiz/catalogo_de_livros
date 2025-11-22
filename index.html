@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acervo Pessoal</title>
     <style>
-        /* --- ESTILO GERAL (Indie/Retro) --- */
+        /* --- ESTILO GERAL  --- */
         :root {
             --bg-color: #f4f4f4;
             --card-bg: #ffffff;
@@ -1127,13 +1127,13 @@
     </div>
 
     <script>
-        // SEU ZAP
+        // ZAP
         const ZAP = "5584996399668";
 
-        // FUNÇÃO BLINDADA PARA ABRIR DETALHES
+        // ABRIR DETALHES
         function goDetail(el) {
             try {
-                // 1. Pega dados (usando innerHTML para garantir leitura oculta)
+                // 1. Pega dados
                 const data = el.querySelector('.hidden-data');
                 const title = data.querySelector('.d-title').textContent;
                 const specs = data.querySelector('.d-specs').innerHTML;
@@ -1157,7 +1157,7 @@
                 const msg = "olá! tenho interesse no livro: " + title;
                 btn.href = "https://wa.me/" + ZAP + "?text=" + encodeURIComponent(msg);
 
-                // 4. Troca de tela (simples display block/none)
+                // 4. Troca de tela
                 document.getElementById('catalog-view').style.display = 'none';
                 document.getElementById('about-view').style.display = 'none';
                 document.getElementById('detail-view').style.display = 'block';
